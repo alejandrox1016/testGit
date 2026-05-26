@@ -164,6 +164,6 @@ body {
 }
 
 .about-us button:hover {
-    background-color: #404040;
+    background-color: red;
     color: #ffffff;
 }
