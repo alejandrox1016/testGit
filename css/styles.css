@@ -1,0 +1,169 @@
+/* Border box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* General Rules*/
+.navbar a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: 350;
+    padding: 18px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #0466c8;
+    color: #ffffff;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Color title of Stores*/
+.title span {
+    color: #0466c8;
+}
+
+/* Put the title in the center and add margin top */
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container-navbar {
+    border-top: 1px #e1e1e1 solid;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 1200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 10px rgba(4, 104, 200, 0.8);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.navbar ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(16, 28, 197, 0.2)), url(../img/principal.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .8);
+    background-attachment: fixed;
+}
+
+.products h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: #404040;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.categories img {
+    box-shadow: 0px 0px 15px #000000;
+}
+
+.categories a {
+    text-align: center;
+    display: block;
+    padding: 18px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #404040;
+    margin-bottom: 50px;
+}
+
+
+.categories a:hover {
+    background-color: #0466c8;
+    color: #ffffff;
+    border-bottom-right-radius: 20px;
+}
+
+.about-us {
+    padding: 100px 0px;
+    background-image: linear-gradient(to right, transparent 50%, #0466c8 51%, #0466c8 100%), url(../img/nosotros.jpg);
+    background-size: 100%, 700px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .8);
+}
+
+.about-us h2 {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.about-us p {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about-us button {
+    margin-top: 50px;
+    grid-column: 2 / 3;
+    width: 300px;
+    height: 50px;
+    margin: 10px auto 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .8);
+    background-color: #ffffff;
+    color: #0466c8;
+    font-size: 21;
+}
+
+.about-us button:hover {
+    background-color: #404040;
+    color: #ffffff;
+}
